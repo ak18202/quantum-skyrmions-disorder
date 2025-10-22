@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Data and plots
+data/
+plots/
+*.csv
+*.pdf
+
+# Ground State output files
+*.log
+*.mpack
