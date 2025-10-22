@@ -1,29 +1,23 @@
 # Quantum Skyrmions under Random Bond Disorder
 
-This repositery provides a qualitative framework to model quantum skyrmions under random bond disorder based on [arXiv:2510.16929v1].
+This repositery provides a qualitative framework to model quantum skyrmions under random bond disorder based on [arXiv:2510.16929v1].<br/>
 The implementation uses a neural network quantum state approach to model a spin-half quantum Heisenberg hamiltonian on square lattice with Dzyaloshinskii-Moriya Interaction, Heisenberg anisotropy and boundary pinned mangetic field, built using the [NetKet](https://www.netket.org) framework.
 
 ## Files
-├── src/ # Source code
-│ ├── main.py # Main execution script
-│ ├── hamiltonian.py # Constructs the system Hamiltonian
-│ ├── model.py # Defines the neural network models for modulus and phase
-│ ├── training.py # Implements the training loop with separate learning rate schedules
-│ ├── observables.py # Computes physical observables
-│ └── skyrmion_texture.wl # Mathematica script to visualize skyrmion spin textures
-│
-├── data/ # Output data (CSV files for spin textures, entropies, etc.)
-├── plots/ # Output plots (PDF: energy, skyrmion number, skyrmion stability, entropy)
-│
-├── requirements.txt # Dependencies
-├── LICENSE
-├── .gitignore
-└── README.md
+src/ # Source code<br/>
+- main.py # Main execution script<br/>
+- hamiltonian.py # Constructs the system Hamiltonian<br/>
+- model.py # Defines the neural network models for modulus and phase<br/>
+- training.py # Implements the training loop with separate learning rate schedules<br/>
+- observables.py # Computes physical observables<br/>
+- skyrmion_texture.wl # Mathematica script to visualize skyrmion spin textures<br/>
+- data/ # Output data (CSV files for spin textures, entropies, etc.)<br/>
+- plots/ # Output plots (PDF: energy, skyrmion number, skyrmion stability, entropy)<br/>
 
 ## Usage
-python src/main.py
-Run a short test (default: 10 iterations):
-Adjust parameters system size, disorder strength, number of iterations, learning rates etc. according to need
+python src/main.py<br/>
+Run a short test (default: 10 iterations)<br/>
+Adjust parameters system size, disorder strength, number of iterations, learning rates etc. according to need<br/>
 
 ## Output
 Results are saved into:
